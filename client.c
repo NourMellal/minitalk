@@ -6,7 +6,7 @@
 /*   By: nmellal <nmellal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 00:17:07 by nmellal           #+#    #+#             */
-/*   Updated: 2024/04/25 20:43:54 by nmellal          ###   ########.fr       */
+/*   Updated: 2024/04/25 20:51:04 by nmellal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,6 @@ int	main(int ac, char **av)
 	sig_conf();
 	message_sender(pid, av[2]);
 	while (1)
-		;
+		sleep(5);
 	return (0);
 }
