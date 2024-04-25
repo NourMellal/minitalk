@@ -6,7 +6,7 @@
 /*   By: nmellal <nmellal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 00:17:07 by nmellal           #+#    #+#             */
-/*   Updated: 2024/04/25 20:27:09 by nmellal          ###   ########.fr       */
+/*   Updated: 2024/04/25 20:43:54 by nmellal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	message_sender(pid_t pid, char *msg)
 				if (kill(pid, SIGUSR2) == -1)
 					error_exit("kill failed");
 			}
-			usleep(100);
+			usleep(1500);
 			c <<= 1;
 		}
 		msg++;
@@ -86,6 +86,6 @@ int	main(int ac, char **av)
 	sig_conf();
 	message_sender(pid, av[2]);
 	while (1)
-		pause();
+		;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: nmellal <nmellal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:21:04 by nmellal           #+#    #+#             */
-/*   Updated: 2024/04/25 20:28:04 by nmellal          ###   ########.fr       */
+/*   Updated: 2024/04/25 20:43:12 by nmellal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ int	main(void)
 
 	pid = getpid();
 	ft_printf("Server PID: %d\n", pid);
+	sig_conf2();
 	while (1)
-		sig_conf2();
+		;
 	return (0);
 }
